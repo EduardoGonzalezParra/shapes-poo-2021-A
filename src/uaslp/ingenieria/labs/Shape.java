@@ -13,7 +13,7 @@ public class Shape {
         return 0;
     }
 
-    public int getPerimeter() {
+    public double getPerimeter() {
         return 0;
     }
 
