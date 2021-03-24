@@ -10,8 +10,6 @@ public class Main {
     public static void main(String[] args) {
         LinkedList<Shape> shapes = new LinkedList<>();
 
-        shapes.add(new Shape());
-
         shapes.add(new Circle(5));
         shapes.add(new Rectangle(8, 3));
         shapes.add(new Rectangle(14, 10));

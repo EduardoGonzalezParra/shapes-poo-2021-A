@@ -6,6 +6,7 @@ public class Circle extends Shape {
     private int radio;
 
     public Circle(int radio) {
+        super(null);
         this.radio = radio;
     }
 
@@ -14,6 +15,7 @@ public class Circle extends Shape {
     // Sobrecarga = Overloading // polimorfismo
 
     // Polimorfismo: Enviar un mensaje a un objeto y que este responda de diferentes maneras
+    @Override
     public String getName() {
         return "Circle";
     }
@@ -22,7 +24,6 @@ public class Circle extends Shape {
         return radio;
     }
 
-    // Tarea
     public int getSidesCount() {
         return 0;
     }
@@ -31,6 +32,7 @@ public class Circle extends Shape {
         return Math.PI * 2 * radio ;
     }
 
+    @Override
     public double getArea() {
         return Math.PI * radio * radio;
     }
