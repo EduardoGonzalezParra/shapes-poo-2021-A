@@ -2,7 +2,7 @@ package uaslp.ingenieria.labs;
 
 // No tiene sentido instanciar Shape
 
-public abstract class Shape {
+public abstract class Shape implements DrawableItem {
 
     private int sides[];
 

@@ -4,6 +4,7 @@ import uaslp.ingenieria.labs.shapes.*;
 import uaslp.ingenieria.labs.shapes.triangles.TriangleEquilatero;
 
 import java.util.LinkedList;
+import java.util.List;
 
 public class Main {
 
@@ -22,8 +23,28 @@ public class Main {
             System.out.println("Perimeter: " + shape.getPerimeter());
             System.out.println("Area: " + shape.getArea());
             System.out.println("-----------------------------------------------");
+
+
         }
 
+        List<DrawableItem> drawableItems = new LinkedList<>();
+
+        drawableItems.addAll(shapes);
+
+        drawableItems.add(new School());
+        drawableItems.add(new House());
+        drawableItems.add(new Dog());
+
+        drawItems(drawableItems);
 
     }
+
+    public static void drawItems(List<DrawableItem> drawableItems){
+
+        System.out.println("Drawing Items: ");
+
+        for(DrawableItem drawableItem: drawableItems){
+            drawableItem.draw();
+        }
+    };
 }

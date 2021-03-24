@@ -20,4 +20,5 @@ public abstract class Triangle extends Shape {
     public double getArea() {
         return base * height / 2.0;
     }
+
 }

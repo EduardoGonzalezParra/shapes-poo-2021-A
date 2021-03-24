@@ -12,7 +12,7 @@ public class TriangleEquilatero extends Triangle {
 
     @Override
     public String getName() {
-        return "Triangle Equilatero";
+        return "Triangle Equilátero";
     }
 
     //public double getPerimeter() {
@@ -26,5 +26,10 @@ public class TriangleEquilatero extends Triangle {
     @Override
     public double getArea() {
         return height * side / 2;
+    }
+
+    @Override
+    public void draw() {
+        System.out.println("TRIANGLE EQUILÁTERO");
     }
 }

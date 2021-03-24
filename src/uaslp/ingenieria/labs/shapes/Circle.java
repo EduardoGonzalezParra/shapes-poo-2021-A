@@ -36,4 +36,9 @@ public class Circle extends Shape {
     public double getArea() {
         return Math.PI * radio * radio;
     }
+
+    @Override
+    public void draw() {
+        System.out.println("CIRCLE");
+    }
 }

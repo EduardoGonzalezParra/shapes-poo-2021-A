@@ -30,4 +30,9 @@ public class ScaleneTriangle extends Triangle {
         double height = Math.sqrt(side * side - ((base /2.0) * (base / 2.0)));
         return base * height / 2;
     }
+
+    @Override
+    public void draw() {
+        System.out.println("TRIANGLE ESCALENO");
+    }
 }

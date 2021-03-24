@@ -26,4 +26,9 @@ public class IsoscelesTriangle extends Triangle {
     public int getSidesCount() {
         return 3;
     }
+
+    @Override
+    public void draw() {
+        System.out.println("TRIANGLE ISOSCELES");
+    }
 }

@@ -28,4 +28,10 @@ public class Square extends Shape {
     public double getArea() {
         return side * side;
     }
+
+    @Override
+    public void draw() {
+        System.out.println("SQUARE");
+    }
+
 }

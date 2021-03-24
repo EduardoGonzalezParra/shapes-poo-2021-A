@@ -30,4 +30,9 @@ public class Rectangle extends Shape {
     public double getArea() {
         return base * height;
     }
+
+    @Override
+    public void draw() {
+        System.out.println("RECTANGLE");
+    }
 }
